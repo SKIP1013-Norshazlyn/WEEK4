@@ -1,0 +1,58 @@
+package myScanner;
+
+import java.util.Scanner;
+
+public class Exercise2 {
+
+	public static void main(String[] args) {
+		
+		int num1;
+		double num2;
+		
+		Scanner scanMe = new Scanner(System.in);
+		
+		System.out.println("Enter an integer: ");
+		num1 = scanMe.nextInt();
+		
+		System.out.println("Enter Double value: ");
+		num2 = scanMe.nextDouble();
+		
+		System.out.println("");
+		
+		System.out.println("Using nextInt(): " +num1);
+		System.out.println("Using nextDouble(): " +num2);
+		
+		System.out.println("");
+		
+		num1 = ++num1;
+		System.out.println("Using nextInt() increament by 1:" +num1);
+		
+		num2 = --num2;
+		System.out.println("Using nextInt() decreament by 1:" +num2);
+		
+		System.out.println("");
+		
+		num1 = num1 + 5;
+		System.out.println("Using nextInt() increament by 5:" +num1);
+		
+		num2 = num2 - 5;
+		System.out.println("Using nextInt() decreament by 5:" +num2);
+		
+		System.out.println("");
+		
+		int mod1 = num1 % 10;
+		double mod2 = num2 % 10;
+		
+		System.out.println("Using nextInt() mod 10: " +mod1);
+		System.out.printf("Using nextDouble() mod 10: %.2f" ,mod2);
+		
+		System.out.println("\n");
+		
+		double y = Math.pow(mod1, mod2);
+		System.out.println(y);
+		
+
+
+	}
+
+}
