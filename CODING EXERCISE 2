@@ -1,0 +1,20 @@
+package myScanner;
+
+import java.util.Scanner;
+
+public class Exercise3 {
+
+	public static void main(String[] args) {
+		
+		String fullname;
+		
+		Scanner scanMe = new Scanner(System.in);
+		
+		System.out.println("Enter your full name again: ");
+		fullname = scanMe.nextLine();
+		
+		System.out.println("My full name is " +fullname);
+
+	}
+
+}
